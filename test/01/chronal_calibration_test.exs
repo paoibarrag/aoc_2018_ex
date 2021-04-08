@@ -24,7 +24,7 @@ defmodule ChronalCalibrationTest do
       end
     end
 
-    context "test with real input" do
+    context "test with a real input" do
       @tag timeout: :infinity, skip: :slow
       it "finds correct answer" do
         assert ChronalCalibration.base_frequency("#{@base_path}/real_input.txt") == 549
